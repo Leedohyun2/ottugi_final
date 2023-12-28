@@ -160,6 +160,12 @@
       /* background: red; */
     }
 
+    .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0;
+}
     .main {
       width: 100%;
       position: relative;
@@ -167,8 +173,8 @@
     }
 
     .main_inner {
-      min-width: 1280px;
-      padding: 0 180px;
+      min-width: 1200px;
+      /* padding: 0 180px; */
       margin: 0 auto;
     }
 
@@ -350,7 +356,7 @@
     }
 
     .guide {
-      min-width: 1280px;
+      min-width: 1200px;
       margin: 0 auto;
       display: flex;
       gap: 48px;
@@ -453,13 +459,14 @@
 
     .precess {
       display: flex;
+
       position: relative;
     }
 
     .process ul {
-      max-width: 1280px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0 100px;
+      padding: 0 50px;
       box-sizing: border-box;
       display: flex;
       justify-content: space-between;
@@ -520,7 +527,7 @@
     /* Main - 고객상담센터 */
     .call_info_box {
       width: 100%;
-      max-width: 1440px;
+      max-width: 1200px;
       min-width: 608px;
       padding: 32px;
       margin-bottom: 72px;
@@ -571,7 +578,7 @@
     }
 
     .questions_inner {
-      padding: 0 240px;
+      padding: 0 200px;
     }
 
     .question {
@@ -997,7 +1004,7 @@
   </style>
 </head>
 
-<body style="min-width: 1700px;">
+<body style="min-width: 1600px;">
   <div class="skipMenu" title="스킵 메뉴">
     <a href="#guide">본문 내용 바로가기</a>
   </div>
@@ -1151,9 +1158,10 @@
       </section>
     </div>
 
+    <div class="container">
     <div class="main_inner">
       <div class="process_wrap">
-        <section class="process">
+        <section class="process" style="width: 1200px;">
           <h2>고객상담 처리절차</h2>
           <ul>
             <li class="process01">
@@ -1219,6 +1227,7 @@
           </p>
         </div>
       </section>
+      </div>
 
       <section class="questions" id="questions">
         <h2>홈페이지 접수</h2>

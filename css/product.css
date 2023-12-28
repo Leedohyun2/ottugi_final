@@ -11,8 +11,21 @@ body {
 
 .prd-wrap {
     width: 100%;
+    display: flex;
+    gap: 45px;
+    padding-bottom: 100px;
 }
 
+.prd-img img {
+    width: 370px;
+    height: 400px;
+}
+
+.prd-item p {
+    font-size: 22px;
+    padding-top: 30px;
+    font-weight: bold;
+}
 .product_cat {
     position: relative;
     width: 1200px;
@@ -63,6 +76,7 @@ body {
     width: 24px;
     height: 24px;
     margin-top: -12px;
+    top: -5px;
     background: url(/images/product/ico_search.svg) no-repeat 50% 50% / 24px 24px;
 }
 
@@ -99,19 +113,18 @@ button {
     height: 0;
 }
 
-.prd-item.n1,
+
+/* .prd-item.n1,
 .prd-item.n3,
 .prd-item.n6,
 .prd-item.n14 {
     position: relative;
-    right: 300px;
     padding-bottom: 30px;
 }
 
 .prd-item.n8,
 .prd-item.n10 {
     position: relative;
-    right: 300px;
     padding-bottom: 30px;
 }
 
@@ -153,27 +166,23 @@ button {
     position: relative;
     width: 30%;
     left: 240px;
-}
+} */
 
 /* 이미지 호버 */
 
 .prd-img img {
     object-fit: cover;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
     border-radius: 20px;
 }
 
 
 .prd-img:hover a img {
-    transition: 0.6s linear;
-    transform: scale(1.2);
+    transition: 0.2s linear;
+    transform: scale(1.1);
     overflow: hidden;
 
 }
-
-/* .prd-img {
-    overflow: hidden;
-} */
 
 
 /* 메인 이미지 */
@@ -194,9 +203,16 @@ button {
     position: relative;
     display: flex;
     justify-content: center;
-    bottom: 32px;
+    bottom: 0px;
     font-size: 45px;
     color: #222222;
+}
+  
+.main p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    padding-top: 54px;
 }
 
 .section.no-pad-bot {

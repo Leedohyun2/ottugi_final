@@ -75,13 +75,13 @@ function fn_change() {
 $(document).ready(function () {
    isShow = true; //변수 하나를 설정 화면에 보이면 true, 보이지 않으면 false;
    $('.pixed_btn button').on('click', function () {
-      if (isShow) { 
+      if (isShow) {
          isShow = false;
-         $('.popup').hide();   
+         $('.popup').hide();
          $('.open_btn').text('on');
-      } else { 
+      } else {
          isShow = true;
-         $('.popup').show();   
+         $('.popup').show();
          $('.open_btn').text('off');
       }
    })
@@ -95,27 +95,27 @@ $(document).ready(function () {
       $(".header_nav ul ul, .nav_bg").stop().slideUp("fast");
    });
 
-// 랭귀지, 챗봇 등등
-isShow = true; 
-$('.lang_menu_btn').on('click', function () {
-   if (isShow) { 
-      isShow = false;
-      $('.lang').hide();   
-   } else {  
-      isShow = true;
-      $('.lang').show();   
-   }
-})
+   // 랭귀지, 챗봇 등등
+   isShow = true;
+   $('.lang_menu_btn').on('click', function () {
+      if (isShow) {
+         isShow = false;
+         $('.lang').hide();
+      } else {
+         isShow = true;
+         $('.lang').show();
+      }
+   })
 
    // 랭귀지 버튼 클릭
-   isShow = true; 
+   isShow = true;
    $('.lang_down').on('click', function () {
-      if (isShow) { 
+      if (isShow) {
          isShow = false;
-         $('.lang_list').hide();   
-      } else {  
+         $('.lang_list').hide();
+      } else {
          isShow = true;
-         $('.lang_list').show();   
+         $('.lang_list').show();
       }
    })
 });
@@ -125,11 +125,11 @@ $('.lang_menu_btn').on('click', function () {
 var btnTop = document.querySelector('.btn_top');
 
 window.addEventListener("scroll", function () {
-    var scrollY = window.scrollY || document.documentElement.scrollTop;
+   var scrollY = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollY > 180) {
-        btnTop.classList.add("on");
-    } else {
-        btnTop.classList.remove("on");
-    }
+   if (scrollY > 180) {
+      btnTop.classList.add("on");
+   } else {
+      btnTop.classList.remove("on");
+   }
 });

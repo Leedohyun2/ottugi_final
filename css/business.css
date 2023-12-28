@@ -33,7 +33,6 @@ body {
 
 .overview-content .item-text {
   width: 50%;
-  padding-top: 32px;
 }
 
 .overview-content .item-text a {
@@ -62,8 +61,8 @@ body {
 }
 
 .overview-content .item-text a p {
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 32px;
   text-align: left;
 }
 
@@ -75,6 +74,7 @@ body {
   margin-right: 80px;
   border-radius: 20px;
   height: 280px;
+  width: 550px;
 }
 
 /* left */
@@ -86,19 +86,21 @@ body {
   border-radius: 20px;
   position: relative;
   right: 50px;
+  height: 360px;
+  width: 550px;
 }
 
 .overview-content.left .item-text a p {
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 32px;
   top: 140px;
   position: relative;
   width: 600px;
 }
 
 .overview-content.left .item-text.n2 a p {
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 32px;
   top: 35px;
   position: relative;
   width: 600px;
@@ -123,9 +125,9 @@ body {
 }
 
 .last p {
-  font-size: 22px;
+  font-size: 20px;
   text-align: left;
-  line-height: 40px;
+  line-height: 38px;
 }
 
 .more {
@@ -169,7 +171,9 @@ body {
 }
 
 .item-img img {
+  width: 550px;
   transition: transform 0.5s;
+  height: 360px;
 }
 
 .item-img img:hover {
@@ -196,14 +200,23 @@ body {
   clear: both;
 }
 
+
 .main h2 {
   position: relative;
   display: flex;
   justify-content: center;
-  bottom: 32px;
+  bottom: 0px;
   font-size: 45px;
   color: #222222;
 }
+
+.main p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  padding-top: 54px;
+}
+
 
 .section.no-pad-bot {
   padding-bottom: 0;
