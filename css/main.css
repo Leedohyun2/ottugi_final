@@ -337,7 +337,7 @@ li {
 
 /* 우측하단 팝업버튼 */
 .open_btn {
-   background: url(../images/main/btn_close.svg) no-repeat 0 0 / 100% 100%;
+   background: url(../images/main/icons8-메뉴-2-48.png) no-repeat 0 0 / 100% 100%;
    position: fixed;
    bottom: 130px;
    right: 20px;
