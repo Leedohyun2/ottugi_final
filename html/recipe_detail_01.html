@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <style>
     /* Reset */
     body,
@@ -535,6 +537,12 @@
 
     .link img {
       width: 315px;
+      transition: 300ms;
+    }
+
+    .made-item-hover {
+      opacity: 0;
+      display: none;
     }
 
     .ingre_title {
@@ -577,8 +585,9 @@
       top: 60px;
     }
 
-    .link:hover .made-item-hover {
-      /* transition: all 0.8s ease; */
+    .made-item .link:hover {
+      transition: opacity 0.8s ease;
+      opacity: 1;
       display: block;
     }
 
@@ -590,7 +599,8 @@
       z-index: 200;
     }
 
-    .btn_top.on {
+    .btn_top.on,
+    .btn_close.on {
       display: block;
     }
 
@@ -601,11 +611,35 @@
       filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.15));
     }
 
+    .btn_close {
+      filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.15));
+    }
+
+    .btn_close.hide {
+      display: none;
+    }
+
     .sr_only {
       position: absolute;
       top: -99999px;
       font-size: 0;
       height: 0;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+      color: white;
+      position: fixed;
+      bottom: 96px;
+      right: -68px;
+      z-index: 200;
+      font-size: 60px;
+      border-radius: 50%;
+      background-color: var(--color-red);
     }
   </style>
 </head>
@@ -882,6 +916,14 @@
         <span class="sr_only">상단으로 이동하기</span>
       </a>
     </div>
+    <div class="fixed_area">
+      <a href="#none" class="btn_close">
+        <span class="material-symbols-outlined ">
+          cancel
+        </span>
+        <span class="sr_only">창닫기</span>
+      </a>
+    </div>
   </main>
   <footer></footer>
   <script src="./js/jquery-3.7.1.min.js"></script>
@@ -925,6 +967,21 @@
       }
     });
 
+    var btnClose = document.querySelector('.material-symbols-outlined');
+
+    document.addEventListener("scroll", function () {
+      var scrollY = document.documentElement.scrollTop;
+
+      if (scrollY > 180) {
+        btnClose.classList.remove("hide");
+      } else {
+        btnClose.classList.add("hide");
+      }
+    });
+
+    btnClose.addEventListener("click", function () {
+      window.close(); // 현재 창을 닫음
+    });
   </script>
 </body>
 

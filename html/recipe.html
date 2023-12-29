@@ -13,6 +13,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <style>
     /* Reset */
     body,
@@ -385,6 +389,7 @@
     }
 
     .topHot_content .topHot_item {
+      position: relative;
       width: 50%;
       padding: 16px;
       box-sizing: border-box;
@@ -404,6 +409,12 @@
     .topHot_item .info_title>a {
       font-size: 18px;
       font-weight: 700;
+    }
+
+    .topHot_item>.info>.info_title {
+      background: url(/images/product/btn_detail_view.svg) no-repeat;
+      background-position: top 2px right 148px;
+      transform-origin: center;
     }
 
     /* Main - 레시피 구분 탭 */
@@ -593,6 +604,7 @@
       width: 278px;
       height: 196px;
       margin-bottom: 10px;
+      border-radius: 20px;
       overflow: hidden;
     }
 
@@ -654,6 +666,34 @@
       background-size: auto;
       background-position: top 7px left 10px;
       cursor: pointer;
+    }
+
+    .info_bottom .ibBtn.like02 {
+      color: var(--color-title);
+      font-size: 12px;
+      text-align: center;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px 0 30px;
+      margin-right: 10px;
+      box-sizing: border-box;
+      border: 1px solid #eaeaea;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+      color: red;
+      font-size: 14px;
+      position: absolute;
+      left: 28px;
+      bottom: 26px;
     }
 
     .info_bottom .ibBtn.comment {
@@ -759,7 +799,7 @@
     }
 
     .b_right {
-      margin: 30px 0 0 25px;
+      margin: 30px 0 90px 25px;
     }
 
     .b_last_img {
@@ -789,112 +829,112 @@
   </div> -->
   <div class="header_wrap">
     <div class="ottugi_title">
-        <h1>오뚜기</h1>
-        <a href="../index.html">
-            <img src="../images/main/ottugi_logo.svg" alt="">
-        </a>
+      <h1>오뚜기</h1>
+      <a href="../index.html">
+        <img src="../images/main/ottugi_logo.svg" alt="">
+      </a>
     </div>
     <div class="header_container">
-        <div class="header_all_wrap">
-            <nav class="header_nav">
-                <ul>
-                    <li><a href="./about.html">회사소개</a>
-                        <ul>
-                            <li><a href="./about.html">회사개요*</a></li>
-                            <li><a href="./business.html">사업소개*</a></li>
-                            <li><a href="./ceo.html">CEO 메세지*</a></li>
-                            <li><a href="./history.html">연혁*</a></li>
-                            <li><a href="./maps.html">오시는길*</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">ESG경영</a>
-                        <ul>
-                            <li><a href="#none">Overview</a></li>
-                            <li><a href="./ESG.html">ESG경영소개*</a></li>
-                            <li><a href="#none">환경</a></li>
-                            <li><a href="#none">사회</a></li>
-                            <li><a href="#none">지배구조</a></li>
-                            <li><a href="#none">사회공헌</a></li>
-                            <li><a href="#none">동반성장</a></li>
-                            <li><a href="#none">보고서및정책</a></li>
-                            <li><a href="#none">ESG Data</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./product.html">제품이야기</a>
-                        <ul>
-                            <li><a href="./product.html">제품정보*</a></li>
-                            <li><a href="./product_new.html">신제품*</a></li>
-                            <li><a href="./recipe.html">인기레시피*</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">브랜드경험</a>
-                        <ul>
-                            <li><a href="#none">Overview</a></li>
-                            <li><a href="#none">공식캐릭터</a></li>
-                            <li><a href="#none">브랜드공간</a></li>
-                            <li><a href="#none">공장견학</a></li>
-                            <li><a href="#none">공모전</a></li>
-                            <li><a href="#none">페스티벌</a></li>
-                            <li><a href="#none">이벤트</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#none">홍보센터</a>
-                        <ul>
-                            <li><a href="./notice.html">공지사항*</a></li>
-                            <li><a href="#none">오뚜기뉴스룸</a></li>
-                            <li><a href="#none">언론보도</a></li>
-                            <li><a href="#none">CF스토리</a></li>
-                            <li><a href="#none">칼럼</a></li>
-                            <li><a href="#none">투자정보</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./customer.html">고객서비스</a>
-                        <ul>
-                            <li><a href="./customer.html">고객의 소리*</a></li>
-                            <li><a href="#none">접수내역조회</a></li>
-                            <li><a href="#none">고객상담 프로세스</a></li>
-                            <li><a href="#none">고객만족활동</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <!-- 랭귀지, 챗봇등 -->
-            <div class="lang_menu_btn">
-                <a href="#none">
-                    <img src="../images/main/free-icon-menu-3502458.png" alt="">
-                </a>
-            </div>
-            <div class="lang">
-                <div class="lang_down">
-                    <a href="#none">KR
-                        <img src="../images/main/lang_down.svg" alt="">
-                    </a>
-                    <div class="lang_list">
-                        <p><a href="#none">KR</a></p>
-                        <p><a href="#none">EN</a></p>
-                    </div>
-                </div>
-                <div class="ottugi_search">
-                    <a href="#none"><img src="../images/main/ottugi_search.svg" alt=""></a>
-                </div>
-                <div class="ottugi_chat">
-                    <a href="#none"><img src="../images/main/ottugi_chatbot.svg" alt=""></a>
-                </div>
-                <div class="ottugi_mall">
-                    <a href="#none"><img src="../images/main/ottugi_mall.svg" alt=""></a>
-                </div>
-            </div>
+      <div class="header_all_wrap">
+        <nav class="header_nav">
+          <ul>
+            <li><a href="./about.html">회사소개</a>
+              <ul>
+                <li><a href="./about.html">회사개요*</a></li>
+                <li><a href="./business.html">사업소개*</a></li>
+                <li><a href="./ceo.html">CEO 메세지*</a></li>
+                <li><a href="./history.html">연혁*</a></li>
+                <li><a href="./maps.html">오시는길*</a></li>
+              </ul>
+            </li>
+            <li><a href="#">ESG경영</a>
+              <ul>
+                <li><a href="#none">Overview</a></li>
+                <li><a href="./ESG.html">ESG경영소개*</a></li>
+                <li><a href="#none">환경</a></li>
+                <li><a href="#none">사회</a></li>
+                <li><a href="#none">지배구조</a></li>
+                <li><a href="#none">사회공헌</a></li>
+                <li><a href="#none">동반성장</a></li>
+                <li><a href="#none">보고서및정책</a></li>
+                <li><a href="#none">ESG Data</a></li>
+              </ul>
+            </li>
+            <li><a href="./product.html">제품이야기</a>
+              <ul>
+                <li><a href="./product.html">제품정보*</a></li>
+                <li><a href="./product_new.html">신제품*</a></li>
+                <li><a href="./recipe.html">인기레시피*</a></li>
+              </ul>
+            </li>
+            <li><a href="#">브랜드경험</a>
+              <ul>
+                <li><a href="#none">Overview</a></li>
+                <li><a href="#none">공식캐릭터</a></li>
+                <li><a href="#none">브랜드공간</a></li>
+                <li><a href="#none">공장견학</a></li>
+                <li><a href="#none">공모전</a></li>
+                <li><a href="#none">페스티벌</a></li>
+                <li><a href="#none">이벤트</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">홍보센터</a>
+              <ul>
+                <li><a href="./notice.html">공지사항*</a></li>
+                <li><a href="#none">오뚜기뉴스룸</a></li>
+                <li><a href="#none">언론보도</a></li>
+                <li><a href="#none">CF스토리</a></li>
+                <li><a href="#none">칼럼</a></li>
+                <li><a href="#none">투자정보</a></li>
+              </ul>
+            </li>
+            <li><a href="./customer.html">고객서비스</a>
+              <ul>
+                <li><a href="./customer.html">고객의 소리*</a></li>
+                <li><a href="#none">접수내역조회</a></li>
+                <li><a href="#none">고객상담 프로세스</a></li>
+                <li><a href="#none">고객만족활동</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- 랭귀지, 챗봇등 -->
+        <div class="lang_menu_btn">
+          <a href="#none">
+            <img src="../images/main/free-icon-menu-3502458.png" alt="">
+          </a>
         </div>
-        <!-- 반응형 토글 버튼 -->
-        <div class="toggle_btn">
-            <a href="#none">
-                <img src="../images/main/littlemenu.svg" alt="">
+        <div class="lang">
+          <div class="lang_down">
+            <a href="#none">KR
+              <img src="../images/main/lang_down.svg" alt="">
             </a>
+            <div class="lang_list">
+              <p><a href="#none">KR</a></p>
+              <p><a href="#none">EN</a></p>
+            </div>
+          </div>
+          <div class="ottugi_search">
+            <a href="#none"><img src="../images/main/ottugi_search.svg" alt=""></a>
+          </div>
+          <div class="ottugi_chat">
+            <a href="#none"><img src="../images/main/ottugi_chatbot.svg" alt=""></a>
+          </div>
+          <div class="ottugi_mall">
+            <a href="#none"><img src="../images/main/ottugi_mall.svg" alt=""></a>
+          </div>
         </div>
-        <!-- 드롭다운메뉴 배경 -->
-        <div class="nav_bg"></div>
+      </div>
+      <!-- 반응형 토글 버튼 -->
+      <div class="toggle_btn">
+        <a href="#none">
+          <img src="../images/main/littlemenu.svg" alt="">
+        </a>
+      </div>
+      <!-- 드롭다운메뉴 배경 -->
+      <div class="nav_bg"></div>
     </div>
-</div>
+  </div>
 
   <main>
     <div id="contents">
@@ -928,13 +968,18 @@
               <div class="info">
                 <div class="info_title ellip" id="pumkin">
                   <a href="#none" onclick="pumkinOpen()">단호박 뇨끼</a>
+                  </span>
                 </div>
                 <div class="info_top">
                   <p class="count">조회수: 98</p>
                   <p>작성일: 2023-12-29</p>
                 </div>
                 <div class="info_bottom">
-                  <p class="ibBtn like">좋아요: 42</p>
+                  <p class="ibBtn like02">
+                    <span class="material-symbols-outlined">
+                      favorite
+                    </span>좋아요: 42
+                  </p>
                   <p class="ibBtn comment">댓글: 12</p>
                 </div>
               </div>
@@ -1955,10 +2000,10 @@
     // Main - 음식 이미지 Hover 효과
     $(".scale img").hover(
       function () {
-        $(this).stop().animate({ width: "125%", height: "125%" }, "slow");
+        $(this).stop().animate({ width: "125%", height: "125%", marginLeft: "-12.5%", marginTop: "-12.5%" }, { duration: 200, easing: "linear" });
       },
       function () {
-        $(this).stop().animate({ width: "100%", height: "100%" }, "slow");
+        $(this).stop().animate({ width: "100%", height: "100%", marginLeft: 0, marginTop: 0 }, { duration: 200, easing: "linear" });
       }
     );
 
@@ -2031,7 +2076,7 @@
       window.open(
         "recipe_detail_01.html",
         "",
-        "width=1200px, height=1000px, left=0, top=0"
+        "width=1267px, height=1000px, left=0, top=0"
       );
     });
 
@@ -2041,7 +2086,7 @@
       window.open(
         "recipe_detail_02.html",
         "",
-        "width=1200px, height=1000px, left=0, top=0"
+        "width=1267px, height=1000px, left=0, top=0"
       );
     });
 

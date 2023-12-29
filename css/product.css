@@ -169,6 +169,10 @@ button {
 } */
 
 /* 이미지 호버 */
+.prd-img {
+    overflow: hidden;
+    border-radius: 20px;
+}
 
 .prd-img img {
     object-fit: cover;

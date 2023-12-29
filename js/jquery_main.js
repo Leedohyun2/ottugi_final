@@ -58,7 +58,7 @@ $(document).ready(function () {
 let now_img;
 let last_img;
 window.onload = function () {
-   setInterval("fn_change()", 6000);
+   setInterval("fn_change()", 3000);
 }
 function fn_change() {
    now_img = $(".img_area img").eq(0);     //$("img").eq(0)는 첫번째 img를 찾음
